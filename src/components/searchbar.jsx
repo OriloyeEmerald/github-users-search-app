@@ -8,7 +8,7 @@ const   Searchbar = ({toggleState, name, setName, fetchUsers}) => {
     <input
       type="text"
       placeholder="Search GitHub usern…"
-      className={toggleState ? "border-0 rounded-md py-1 px-2 sm:px-5 focus:border-blue-500 bg-transparent text-[.8rem] placeholder-white font-thin lg:text-xl" : 'border-0 rounded-md py-1 px-2 focus:border-blue-500 bg-transparent text-[.8rem] placeholder-gray-400 text-gray-400 font-thin lg:text-xl'}
+      className={toggleState ? "border-0 rounded-md py-1 px-2 sm:px-5 focus:outline-none focus:border-blue-500 bg-transparent text-[.8rem] placeholder-white font-thin lg:text-xl" : 'border-0 rounded-md py-1 px-2 focus:outline-none focus:border-blue-500 bg-transparent text-[.8rem] placeholder-gray-400 text-gray-400 font-thin lg:text-xl'}
       value={name}
       onChange={(e) => setName(e.target.value)}  
     />

@@ -11,10 +11,10 @@ const Navbar = ({toggleState, handleToggleState}) => {
         <img src={toggleState ? logo : logo2} alt="logo" className='w-[140px] lg:w-[200px]' style={{color: !toggleState && '#222731'}} />
       </div>
 
-     <div className="toggle flex gap-[20px]">
+     <div className="toggle flex items-center gap-[20px]">
         <h5 className='text-[1rem] lg:text-xl'style={{color: !toggleState && '#4b689b'}}>{toggleState ? 'LIGHT' : 'DARK'}</h5>
-        <div className="mode mt-[3px]">
-            <img src={toggleState ?toggleIcon : moon} className='lg:w-[30px] lg:mb-3 cursor-pointer' alt="toggle-icon" onClick={handleToggleState}/>
+        <div className="mode">
+            <img src={toggleState ?toggleIcon : moon} className='lg:w-[30px] cursor-pointer' alt="toggle-icon" onClick={handleToggleState}/>
         </div>
      </div>
 
