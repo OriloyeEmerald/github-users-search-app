@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.searchbar, .profile {
+  background: #1e2a47;
+}
+
+h6 {
+  color: #0079ff;
+}
+
+.profile-wrapper {
+  background: #141d2f ;
+}
+
