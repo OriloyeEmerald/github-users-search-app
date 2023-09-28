@@ -13,7 +13,7 @@ const Navbar = ({toggleState, handleToggleState}) => {
 
      <div className="toggle flex gap-[20px]">
         <h5 className='text-[1rem] lg:text-xl'style={{color: !toggleState && '#4b689b'}}>{toggleState ? 'LIGHT' : 'DARK'}</h5>
-        <div className="mode mt-[5px]">
+        <div className="mode mt-[3px]">
             <img src={toggleState ?toggleIcon : moon} className='lg:w-[30px] lg:mb-3 cursor-pointer' alt="toggle-icon" onClick={handleToggleState}/>
         </div>
      </div>
